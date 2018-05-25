@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    color: #626261;
+    font-size: 14px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 25px;
+    color: #ff3251;
+    margin: 30px 0;
+}
+
+h3 {
+    font-size: 14px;
+    color: #ff3251;
+    margin: 20px;
+}
+
+h4 {
+    color: #797979;
+}
+
+h5 {
+    font-size: 14px;
+    color: #797979;
+    margin: 20px 0;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #797979;
+}
+
+.container-1 {
+    display: grid;
+    width: auto;
+    height: auto;
+    margin: 0px auto;
+    background-image: url(../images/Main-bg.png);
+    background-size: cover;
+    background-position: 65% 30%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 100px 500px 100px;
+    grid-template-areas: ". . . . . . . . . ." ". . title title title title title title . ." ". . . . scroll scroll . . . .";
+}
+
+.header {
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    padding: 0;
+    background-color: #fff;
+    background-size: 100%;
+    opacity: 0.8;
+}
+
+.menu {
+    display: inline-grid;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    z-index: 3;
+    justify-content: start;
+    align-content: center;
+}
+
+.men-btn-1 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.men-btn-2 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.men-btn-3 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.men-btn-4 {
+    grid-column-start: 5;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.men-btn-5 {
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.men-btn-6 {
+    grid-column-start: 7;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.menu a {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #797979;
+    padding: 0;
+    margin: 0 1vw;
+    text-align: center;
+    text-decoration: none;
+}
+
+.help a {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: #ff3251;
+    padding: 10px 10px;
+    margin: 0 1vw;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    border: solid 1px #ff3251;
+    border-radius: 20px;
+}
+
+.help a:hover {
+    color: #fff;
+    background-color: #ff3251;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #ff3251;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.help {
+    display: inline-grid;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    grid-column-start: 9;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    z-index: 4;
+    text-transform: uppercase;
+    align-content: center;
+    text-align: center;
+}
+
+.title {
+    grid-area: title;
+    display: inline-grid;
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
+    align-content: center;
+}
+
+.scroll {
+    grid-area: scroll;
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+}
+
+.scroll i {
+    font-size: 48px;
+    color: #fff;
+}
+
+.container-2 {
+    display: inline-grid;
+    width: 100%;
+    margin: 0px;
+    background-size: cover;
+    background-color: #fff;
+    justify-content: center;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: ". . adv adv adv adv adv adv . ." ". adv-icon-1 adv-icon-1 adv-icon-2 adv-icon-2 adv-icon-3 adv-icon-3 adv-icon-4 adv-icon-4 ."
+}
+
+.container-3 {
+    display: inline-grid;
+    width: 100%;
+    margin: 0px;
+    background-size: cover;
+    background-color: #f4f6f8;
+    justify-content: center;
+    grid-template-columns: 10% 20% 20% 20% 20% 10%;
+    grid-template-rows: 20% 30% 50%;
+    grid-template-areas: ". catalog-intro catalog-intro catalog-intro catalog-intro ." ". catalog-btns catalog-btns catalog-btns catalog-btns ." ". catalog-items catalog-items catalog-items catalog-items ." ". all-btn all-btn all-btn all-btn ." ". contacts contacts map map .";
+}
+
+.container-4 {
+    display: inline-grid;
+    width: 100%;
+    margin: 0px;
+    background-size: cover;
+    background-color: #fff;
+    justify-content: stretch;
+    grid-template-columns: 15% 25% auto;
+    grid-template-rows: auto;
+    grid-template-areas: ". contacts map ";
+}
+
+.adv {
+    grid-area: adv;
+    line-height: 1.6;
+    display: grid;
+    padding: 0x;
+    margin: 40px;
+    text-align: center;
+}
+
+.adv-icon-1,
+.adv-icon-2,
+.adv-icon-3,
+.adv-icon-4 {
+    display: block;
+    margin: 10px auto 50px auto;
+    line-height: 1.6;
+    padding: 0 10px;
+    justify-content: center;
+    align-content: start;
+    text-align: center;
+    min-width: 110px;
+}
+
+.adv-icon-1 {
+    grid-area: adv-icon-1;
+}
+
+.adv-icon-2 {
+    grid-area: adv-icon-2;
+}
+
+.adv-icon-3 {
+    grid-area: adv-icon-3;
+}
+
+.adv-icon-4 {
+    grid-area: adv-icon-4;
+}
+
+.adv-icon-img {
+    margin: 10px auto;
+    color: #ff3251;
+    width: auto;
+    max-height: 50px;
+}
+
+.catalog-intro {
+    grid-area: catalog-intro;
+    display: inline-block;
+    padding: 30px 50px 30px 50px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.catalog-btns {
+    grid-area: catalog-btns;
+    display: inline-block;
+    padding: 15px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.catalog-items {
+    grid-area: catalog-items;
+    display: inline-block;
+    padding: 15px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.all-btn {
+    grid-area: all-btn;
+    display: inline-block;
+    padding: 15px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.contacts {
+    grid-area: contacts;
+    display: inline-block;
+    justify-content: center;
+    align-content: start;
+}
+
+.map {
+    grid-area: map;
+    display: inline-block;
+    overflow: hidden;
+    padding-bottom: 40%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    height: 0;
+}
+
+.map iframe {
+    left: 0;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+}
+
+
+/*Grid - контейнер
+контейнер в контейнере - можно
+display: grid
+display: inline grid - inline элемент
+*/
+
+
+/*Grid line*/
+
+
+/*Grid track - всяя строка или колонка*/
+
+
+/*Grid cell*/
+
+
+/*track-size, fr - fraction, line-name
+grid-template-columns: repeat (5, auto); - 5 колонок одинаковой ширины*/
