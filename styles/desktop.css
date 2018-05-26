@@ -243,8 +243,11 @@ h6 {
     text-align: center;
 }
 
-[class^=adv-icon] {
-    display: inline-grid;
+.adv-icon-1,
+.adv-icon-2,
+.adv-icon-3,
+.adv-icon-4 {
+    display: block;
     margin: 10px auto 50px auto;
     line-height: 1.6;
     padding: 0 10px;
