@@ -4,26 +4,34 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body {
+    background-color: #fff;
+}
+
 p {
     color: #626261;
     font-size: 14px;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
 }
 
 h1 {
     color: #fff;
-    font-size: 48px;
+    font-size: 30px;
 }
 
 h2 {
     font-size: 25px;
     color: #ff3251;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 h3 {
     font-size: 14px;
     color: #ff3251;
-    margin: 20px;
+    margin: 15px;
 }
 
 h4 {
@@ -33,7 +41,7 @@ h4 {
 h5 {
     font-size: 14px;
     color: #797979;
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 h6 {
@@ -42,9 +50,39 @@ h6 {
     color: #797979;
 }
 
+@media (min-width:768px) {
+    h1 {
+        color: #fff;
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 25px;
+        color: #ff3251;
+        margin: 30px 0;
+    }
+    h3 {
+        font-size: 14px;
+        color: #ff3251;
+        margin: 20px;
+    }
+    h4 {
+        color: #797979;
+    }
+    h5 {
+        font-size: 14px;
+        color: #797979;
+        margin: 20px 0;
+    }
+    h6 {
+        font-size: 16px;
+        font-weight: 500;
+        color: #797979;
+    }
+}
+
 .container-1 {
-    display: grid;
-    width: auto;
+    display: inline-grid;
+    width: 100%;
     height: auto;
     margin: 0px auto;
     background-image: url("https://vollpe.github.io/images/Main-bg.png");
@@ -53,15 +91,17 @@ h6 {
     background-repeat: no-repeat;
     justify-content: center;
     align-content: center;
-    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-    grid-template-rows: 100px 600px 100px;
-    grid-template-areas: ". . . . . . . . . ." ". . title title title title title title . ." ". . . . scroll scroll . . . .";
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-template-rows: 80px 588px 100px;
 }
 
 .header {
     display: block;
+    width: 100%;
+    height: 80px;
+    min-width: 320px;
     grid-column-start: 1;
-    grid-column-end: 11;
+    grid-column-end: 8;
     grid-row-start: 1;
     grid-row-end: 1;
     padding: 0;
@@ -70,81 +110,121 @@ h6 {
     opacity: 0.8;
 }
 
-.menu {
-    display: inline-grid;
-    grid-column-start: 2;
-    grid-column-end: 7;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    z-index: 3;
-    justify-content: start;
-    align-content: center;
+@media (min-width:768px) {
+    .container-1 {
+        display: grid;
+        width: 100%;
+        height: auto;
+        margin: 0px auto;
+        background-image: url("https://vollpe.github.io/images/Main-bg.png");
+        background-size: cover;
+        background-position: 65% 30%;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns: 10% auto auto auto auto auto auto auto auto 10%;
+        grid-template-rows: 80px 80% 100px;
+    }
+    .menu {
+        display: inline-grid;
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        z-index: 3;
+        justify-content: start;
+        align-content: center;
+    }
+    .men-btn-1 {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .men-btn-2 {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .men-btn-3 {
+        grid-column-start: 4;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .men-btn-4 {
+        grid-column-start: 5;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .men-btn-5 {
+        grid-column-start: 6;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .men-btn-6 {
+        grid-column-start: 7;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .menu a {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 600;
+        color: #797979;
+        padding: 0;
+        margin: 0 1vw;
+        text-align: center;
+        text-decoration: none;
+    }
+    .menu a:hover {
+        color: #ff3251;
+        cursor: pointer;
+        text-decoration: none;
+    }
 }
 
-.men-btn-1 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-
-.men-btn-2 {
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-
-.men-btn-3 {
-    grid-column-start: 4;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-
-.men-btn-4 {
-    grid-column-start: 5;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-
-.men-btn-5 {
-    grid-column-start: 6;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-
+.men-btn-1,
+.men-btn-2,
+.men-btn-3,
+.men-btn-4,
+.men-btn-5,
 .men-btn-6 {
-    grid-column-start: 7;
-    grid-column-end: 7;
-    grid-row-start: 1;
-    grid-row-end: 1;
+    display: none;
 }
 
-.menu a {
+.help {
     display: inline-block;
-    font-size: 14px;
-    font-weight: 600;
-    color: #797979;
-    padding: 0;
-    margin: 0 1vw;
+    width: 100%;
+    margin: 0 auto;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    z-index: 4;
+    text-transform: uppercase;
+    vertical-align: middle;
+    justify-content: center;
     text-align: center;
-    text-decoration: none;
 }
 
 .help a {
-    display: inline-block;
+    display: block;
+    width: 160px;
+    height: auto;
     font-size: 10px;
     font-weight: 600;
     line-height: 1.6;
     color: #ff3251;
-    padding: 10px 10px;
-    margin: 0 1vw;
+    padding: 10px;
+    margin: 0 auto;
     text-align: center;
     text-decoration: none;
-    vertical-align: middle;
+    text-transform: uppercase;
     border: solid 1px #ff3251;
     border-radius: 20px;
 }
@@ -156,39 +236,39 @@ h6 {
     text-decoration: none;
 }
 
-.menu a:hover {
-    color: #ff3251;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.help {
-    display: inline-grid;
-    line-height: 1.6;
-    padding: 0;
-    margin: 0;
-    grid-column-start: 9;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    z-index: 4;
-    text-transform: uppercase;
-    align-content: center;
-    text-align: center;
+@media (min-width:768px) {
+    .title {
+        grid-column-start: 1;
+        grid-column-end: 8;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        display: block;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+        align-content: center;
+    }
 }
 
 .title {
-    grid-area: title;
-    display: inline-grid;
-    padding: 30px;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: inherit;
+    height: 100%;
+    padding: 15px;
     margin: 0 auto;
     text-align: center;
     align-content: center;
 }
 
 .scroll {
-    grid-area: scroll;
-    display: inline-block;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    display: block;
     align-content: center;
     text-align: center;
 }
@@ -199,48 +279,32 @@ h6 {
 }
 
 .container-2 {
-    display: inline-grid;
+    display: grid;
     width: 100%;
     margin: 0px;
     background-size: cover;
     background-color: #fff;
     justify-content: center;
-    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: ". . adv adv adv adv adv adv . ." ". adv-icon-1 adv-icon-1 adv-icon-2 adv-icon-2 adv-icon-3 adv-icon-3 adv-icon-4 adv-icon-4 ."
-}
-
-.container-3 {
-    display: inline-grid;
-    width: 100%;
-    margin: 0px;
-    background-size: cover;
-    background-color: #f4f6f8;
-    justify-content: center;
-    grid-template-columns: 10% 20% 20% 20% 20% 10%;
-    grid-template-rows: 20% 30% 50%;
-    grid-template-areas: ". catalog-intro catalog-intro catalog-intro catalog-intro ." ". catalog-btns catalog-btns catalog-btns catalog-btns ." ". catalog-items catalog-items catalog-items catalog-items ." ". all-btn all-btn all-btn all-btn ." ". contacts contacts map map .";
-}
-
-.container-4 {
-    display: inline-grid;
-    width: 100%;
-    margin: 0px;
-    background-size: cover;
-    background-color: #fff;
-    justify-content: stretch;
-    grid-template-columns: 15% 25% auto;
-    grid-template-rows: auto;
-    grid-template-areas: ". contacts map ";
+    grid-template-columns: 10% auto 10%;
+    grid-template-rows: 50% auto;
+    grid-template-areas: ". adv ." ". adv-icons ."
 }
 
 .adv {
     grid-area: adv;
-    line-height: 1.6;
-    display: grid;
-    padding: 0x;
-    margin: 40px;
+    display: block;
+    padding: 0;
+    margin: 10px;
     text-align: center;
+    justify-content: center;
+}
+
+.adv-icons {
+    grid-area: adv-icons;
+    display: block;
+    width: 100%;
+    align-content: start;
+    justify-content: center;
 }
 
 .adv-icon-1,
@@ -248,29 +312,26 @@ h6 {
 .adv-icon-3,
 .adv-icon-4 {
     display: block;
-    margin: 10px auto 50px auto;
+    margin: 10px auto;
     line-height: 1.6;
-    padding: 0 10px;
-    justify-content: center;
+    padding: 0;
     align-content: start;
     text-align: center;
     min-width: 110px;
+    width: 100%;
 }
 
-.adv-icon-1 {
-    grid-area: adv-icon-1;
-}
-
-.adv-icon-2 {
-    grid-area: adv-icon-2;
-}
-
-.adv-icon-3 {
-    grid-area: adv-icon-3;
-}
-
-.adv-icon-4 {
-    grid-area: adv-icon-4;
+@media (min-width:768px) {
+    .adv-icon-1,
+    .adv-icon-2,
+    .adv-icon-3,
+    .adv-icon-4 {
+        display: inline-block;
+        width: 23%
+    }
+    .adv-icons {
+        display: inline-flex;
+    }
 }
 
 .adv-icon-img {
@@ -280,22 +341,62 @@ h6 {
     max-height: 50px;
 }
 
+.container-3 {
+    display: inline-grid;
+    width: 100%;
+    margin: 0px;
+    background-size: cover;
+    background-color: #f4f6f8;
+    justify-content: center;
+    grid-template-columns: 10% auto 10%;
+    grid-template-rows: 30% 10% 50% 10%;
+    grid-template-areas: ". catalog-intro ." " . ctlg-btns . " ". catalog-items . " ". all-btn .";
+}
+
 .catalog-intro {
     grid-area: catalog-intro;
     display: inline-block;
-    padding: 30px 50px 30px 50px;
-    justify-content: center;
-    align-content: center;
+    padding: 30px 0;
+    vertical-align: middle;
     text-align: center;
 }
 
-.catalog-btns {
-    grid-area: catalog-btns;
+.ctlg-btns {
+    grid-area: ctlg-btns;
     display: inline-block;
-    padding: 15px;
-    justify-content: center;
-    align-content: center;
+}
+
+.ctlg-btn-1,
+.ctlg-btn-2,
+.ctlg-btn-3,
+.ctlg-btn-4 {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.ctlg-btns a {
+    display: block;
+    width: 160px;
+    height: auto;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: #ff3251;
+    padding: 10px 10px;
+    margin: 0 auto;
     text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: solid 1px #ff3251;
+    border-radius: 20px;
+}
+
+.ctlg-btns a:hover {
+    color: #fff;
+    background-color: #ff3251;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .catalog-items {
@@ -316,49 +417,46 @@ h6 {
     text-align: center;
 }
 
-.contacts {
-    grid-area: contacts;
+.section {
     display: inline-block;
-    justify-content: center;
-    align-content: start;
+    width: 100%;
+    margin: 0;
+    background-size: cover;
+    background-color: #fff;
+    justify-content: stretch;
+}
+
+.contacts {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+}
+
+@media (min-width:768px) {
+    .contacts {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
 }
 
 .map {
-    grid-area: map;
-    display: inline-block;
-    overflow: hidden;
-    padding-bottom: 40%;
-    justify-content: center;
-    align-content: center;
+    display: block;
+    width: 100%;
+    padding-bottom: 0;
     text-align: center;
     position: relative;
     height: 0;
 }
 
+
+/*тут есть позишены, потому что ну вот не знаю как с гуглокартой работать 
+без позишенов и JS*/
+
 .map iframe {
     left: 0;
     top: 0;
-    height: 400px;
+    height: 30vw;
     width: 100%;
-    position: absolute;
 }
-
-
-/*Grid - контейнер
-контейнер в контейнере - можно
-display: grid
-display: inline grid - inline элемент
-*/
-
-
-/*Grid line*/
-
-
-/*Grid track - всяя строка или колонка*/
-
-
-/*Grid cell*/
-
-
-/*track-size, fr - fraction, line-name
-grid-template-columns: repeat (5, auto); - 5 колонок одинаковой ширины*/
