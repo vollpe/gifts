@@ -125,6 +125,20 @@ h6 {
         grid-template-columns: 10% auto auto auto auto auto auto auto auto 10%;
         grid-template-rows: 80px 80% 100px;
     }
+    .header {
+        display: block;
+        width: 100%;
+        height: 80px;
+        min-width: 320px;
+        grid-column-start: 1;
+        grid-column-end: 10;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        padding: 0;
+        background-color: #fff;
+        background-size: 100%;
+        opacity: 0.8;
+    }
     .menu {
         display: inline-grid;
         grid-column-start: 2;
@@ -200,6 +214,7 @@ h6 {
 .help {
     display: inline-block;
     width: 100%;
+    height: autp;
     margin: 0 auto;
     grid-column-start: 1;
     grid-column-end: 8;
@@ -408,6 +423,20 @@ h6 {
     text-align: center;
 }
 
+.ctlg-item-1,
+.ctlg-item-2,
+.ctlg-item-3,
+.ctlg-item-4 {
+    display: block;
+    margin: 10px auto;
+    line-height: 1.6;
+    padding: 0;
+    align-content: start;
+    text-align: center;
+    min-width: 110px;
+    width: 100%;
+}
+
 .all-btn {
     grid-area: all-btn;
     display: inline-block;
@@ -417,7 +446,7 @@ h6 {
     text-align: center;
 }
 
-.section {
+.section #container-4 {
     display: inline-block;
     width: 100%;
     margin: 0;
