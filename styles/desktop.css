@@ -551,6 +551,7 @@ h6 {
         display: inline-block;
         width: 100%;
         text-align: left;
+        padding: 15px;
     }
 }
 
