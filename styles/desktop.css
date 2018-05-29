@@ -214,8 +214,9 @@ h6 {
 .help {
     display: inline-block;
     width: 100%;
-    height: autp;
-    margin: 0 auto;
+    height: auto;
+    margin: auto 15px auto auto;
+    /*чтобы кнопка была на месте*/
     grid-column-start: 1;
     grid-column-end: 8;
     grid-row-start: 1;
@@ -223,8 +224,6 @@ h6 {
     z-index: 4;
     text-transform: uppercase;
     vertical-align: middle;
-    justify-content: center;
-    text-align: center;
 }
 
 .help a {
@@ -236,7 +235,6 @@ h6 {
     line-height: 1.6;
     color: #ff3251;
     padding: 10px;
-    margin: 0 auto;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -309,7 +307,7 @@ h6 {
     grid-area: adv;
     display: block;
     padding: 0;
-    margin: 10px;
+    margin: 10px 0;
     text-align: center;
     justify-content: center;
 }
@@ -426,10 +424,42 @@ h6 {
     grid-row-start: 3;
     grid-row-end: 3;
     display: block;
-    padding: 15px;
+    padding: 0;
     justify-content: center;
     align-content: center;
     text-align: center;
+}
+
+.h4-ctlg {
+    font-size: 15px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #626261;
+}
+
+.h5-ctlg {
+    font-size: 15px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #ff3251;
+}
+
+.ctlg-items a {
+    display: inline;
+    color: #ff3251;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: bold;
+}
+
+.ctlg-btns a:hover {
+    color: #fff;
+    background-color: #ff3251;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .ctlg-item-1,
@@ -444,12 +474,13 @@ h6 {
     text-align: center;
     min-width: 110px;
     width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 .ctlg-items-img {
     display: block;
     margin: 10px auto;
-    color: #ff3251;
     width: 100%;
     height: auto;
 }
