@@ -365,11 +365,13 @@ h6 {
     justify-content: center;
     grid-template-columns: 10% auto 10%;
     grid-template-rows: 30% 10% 50% 10%;
-    grid-template-areas: ". catalog-intro ." " . ctlg-btns . " ". catalog-items . " ". all-btn .";
 }
 
-.catalog-intro {
-    grid-area: catalog-intro;
+.intro {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
     display: inline-block;
     padding: 30px 0;
     vertical-align: middle;
@@ -377,8 +379,12 @@ h6 {
 }
 
 .ctlg-btns {
-    grid-area: ctlg-btns;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
     display: inline-block;
+    width: 100%;
 }
 
 .ctlg-btn-1,
@@ -414,9 +420,12 @@ h6 {
     text-decoration: none;
 }
 
-.catalog-items {
-    grid-area: catalog-items;
-    display: inline-block;
+.ctlg-items {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    display: block;
     padding: 15px;
     justify-content: center;
     align-content: center;
@@ -437,8 +446,19 @@ h6 {
     width: 100%;
 }
 
+.ctlg-items-img {
+    display: block;
+    margin: 10px auto;
+    color: #ff3251;
+    width: 100%;
+    height: auto;
+}
+
 .all-btn {
-    grid-area: all-btn;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 4;
     display: inline-block;
     padding: 15px;
     justify-content: center;
