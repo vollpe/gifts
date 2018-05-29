@@ -92,7 +92,7 @@ h6 {
     justify-content: center;
     align-content: center;
     grid-template-columns: auto auto auto auto auto auto auto auto;
-    grid-template-rows: 80px 588px 100px;
+    grid-template-rows: 80px 80vh 20vh;
 }
 
 .header {
@@ -122,7 +122,7 @@ h6 {
         background-repeat: no-repeat;
         justify-content: center;
         align-content: center;
-        grid-template-columns: 10% auto auto auto auto auto auto auto auto 10%;
+        grid-template-columns: 10% 20% 20% 20% 20% 10%;
         grid-template-rows: 80px 80% 100px;
     }
     .header {
@@ -131,10 +131,11 @@ h6 {
         height: 80px;
         min-width: 320px;
         grid-column-start: 1;
-        grid-column-end: 10;
+        grid-column-end: 8;
         grid-row-start: 1;
         grid-row-end: 1;
         padding: 0;
+        margin: 0;
         background-color: #fff;
         background-size: 100%;
         opacity: 0.8;
@@ -394,6 +395,17 @@ h6 {
     width: 100%;
 }
 
+@media (min-width:768px) {
+    .ctlg-btn-1,
+    .ctlg-btn-2,
+    .ctlg-btn-3,
+    .ctlg-btn-4 {
+        display: inline-block;
+        margin: 10px auto;
+        width: 100%;
+    }
+}
+
 .ctlg-btns a {
     display: block;
     width: 160px;
@@ -459,7 +471,7 @@ h6 {
     color: #fff;
     background-color: #ff3251;
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .ctlg-item-1,
@@ -472,8 +484,7 @@ h6 {
     padding: 0;
     align-content: start;
     text-align: center;
-    min-width: 110px;
-    width: 100%;
+    width: 285px;
     background-color: #fff;
     border-radius: 10px;
 }
@@ -497,25 +508,47 @@ h6 {
     text-align: center;
 }
 
-.section #container-4 {
-    display: inline-block;
+.all-btn a {
+    display: block;
+    width: 160px;
+    height: auto;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: #ff3251;
+    padding: 10px 10px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: solid 1px #ff3251;
+    border-radius: 20px;
+}
+
+.all-btn a:hover {
+    color: #fff;
+    background-color: #ff3251;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#container-4 {
+    display: block;
     width: 100%;
     margin: 0;
     background-size: cover;
     background-color: #fff;
-    justify-content: stretch;
 }
 
 .contacts {
     display: block;
     width: 100%;
     text-align: left;
-    padding: 15px;
 }
 
 @media (min-width:768px) {
     .contacts {
-        display: block;
+        display: inline-block;
         width: 100%;
         text-align: left;
     }
@@ -524,6 +557,7 @@ h6 {
 .map {
     display: block;
     width: 100%;
+    margin: 0;
     padding-bottom: 0;
     text-align: center;
     position: relative;
