@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 24px;
     color: #ff3251;
     margin: 20px 0;
 }
@@ -31,7 +31,6 @@ h2 {
 h3 {
     font-size: 14px;
     color: #ff3251;
-    margin: 15px;
 }
 
 h4 {
@@ -92,7 +91,7 @@ h6 {
     justify-content: center;
     align-content: center;
     grid-template-columns: auto auto auto auto auto auto auto auto;
-    grid-template-rows: 80px 80vh 20vh;
+    grid-template-rows: 80px 75vh 15vh;
 }
 
 .header {
@@ -108,6 +107,7 @@ h6 {
     background-color: #fff;
     background-size: 100%;
     opacity: 0.8;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.16);
 }
 
 @media (min-width:768px) {
@@ -277,6 +277,11 @@ h6 {
     align-content: center;
 }
 
+.h1-title {
+    color: #fff;
+    text-shadow: 0px 1px 8px #303237;
+}
+
 .scroll {
     grid-column-start: 1;
     grid-column-end: 8;
@@ -290,6 +295,7 @@ h6 {
 .scroll i {
     font-size: 48px;
     color: #fff;
+    text-shadow: 0px 1px 8px #000;
 }
 
 .container-2 {
@@ -308,7 +314,7 @@ h6 {
     grid-area: adv;
     display: block;
     padding: 0;
-    margin: 10px 0;
+    margin: 35px 0 25px 0;
     text-align: center;
     justify-content: center;
 }
@@ -319,6 +325,7 @@ h6 {
     width: 100%;
     align-content: start;
     justify-content: center;
+    margin-bottom: 35px;
 }
 
 .adv-icon-1,
@@ -326,13 +333,22 @@ h6 {
 .adv-icon-3,
 .adv-icon-4 {
     display: block;
-    margin: 10px auto;
+    margin: 0 auto 40px auto;
     line-height: 1.6;
     padding: 0;
     align-content: start;
     text-align: center;
     min-width: 110px;
     width: 100%;
+}
+
+strong {
+    font-size: 16px;
+    color: #a7e7e3;
+}
+
+.customers-count {
+    display: inline-block;
 }
 
 @media (min-width:768px) {
@@ -372,7 +388,7 @@ h6 {
     grid-row-start: 1;
     grid-row-end: 1;
     display: inline-block;
-    padding: 30px 0;
+    margin: 80px 0 10px 0;
     vertical-align: middle;
     text-align: center;
 }
@@ -391,8 +407,8 @@ h6 {
 .ctlg-btn-3,
 .ctlg-btn-4 {
     display: block;
-    margin: 10px auto;
-    width: 100%;
+    margin: 20px auto;
+    width: auto;
 }
 
 @media (min-width:768px) {
@@ -401,7 +417,7 @@ h6 {
     .ctlg-btn-3,
     .ctlg-btn-4 {
         display: inline-block;
-        margin: 10px auto;
+        margin: 10px 0;
         width: 100%;
     }
 }
@@ -464,7 +480,7 @@ h6 {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: bold;
+    font-weight: 600;
 }
 
 .ctlg-btns a:hover {
@@ -479,19 +495,19 @@ h6 {
 .ctlg-item-3,
 .ctlg-item-4 {
     display: block;
-    margin: 10px auto;
+    margin: 30px auto 30px auto;
     line-height: 1.6;
     padding: 0;
     align-content: start;
     text-align: center;
     width: 285px;
+    height: 400px;
     background-color: #fff;
     border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(48, 50, 55, 0.1);
 }
 
 .ctlg-items-img {
-    display: block;
-    margin: 10px auto;
     width: 100%;
     height: auto;
 }
@@ -502,7 +518,7 @@ h6 {
     grid-row-start: 4;
     grid-row-end: 4;
     display: inline-block;
-    padding: 15px;
+    margin: 40px;
     justify-content: center;
     align-content: center;
     text-align: center;
@@ -544,6 +560,7 @@ h6 {
     display: block;
     width: 100%;
     text-align: left;
+    margin: 60px 15px 200px 15px;
 }
 
 @media (min-width:768px) {
@@ -571,6 +588,6 @@ h6 {
 .map iframe {
     left: 0;
     top: 0;
-    height: 30vw;
+    height: 200px;
     width: 100%;
 }
