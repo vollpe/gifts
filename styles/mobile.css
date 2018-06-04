@@ -62,7 +62,7 @@ strong {
     width: 100%;
     height: auto;
     margin: 0px auto;
-    background-image: url("https://vollpe.github.io/images/Main-bg.png");
+    background-image: url("../images/background_banner.png");
     background-size: cover;
     background-position: 65% 30%;
     background-repeat: no-repeat;
@@ -102,22 +102,20 @@ strong {
 /* help button*/
 
 .help {
-    display: inline-block;
+    display: block;
     width: 100%;
     height: auto;
     margin: auto 15px auto auto;
-    /*чтобы кнопка была на месте*/
-    grid-column-start: 1;
+    grid-column-start: 4;
     grid-column-end: 8;
     grid-row-start: 1;
     grid-row-end: 1;
     z-index: 4;
-    text-transform: uppercase;
-    vertical-align: middle;
+    justify-content: end;
 }
 
 .help a {
-    display: block;
+    display: inline-block;
     width: 160px;
     height: auto;
     font-size: 10px;
@@ -218,10 +216,7 @@ strong {
     margin-bottom: 35px;
 }
 
-.adv-icon-1,
-.adv-icon-2,
-.adv-icon-3,
-.adv-icon-4 {
+.adv-icon {
     display: block;
     margin: 0 auto 40px auto;
     line-height: 1.6;
@@ -243,9 +238,9 @@ strong {
 /* end of advantages*/
 
 
-/* start of catalog*/
+/* start of catalog-field*/
 
-.catalog {
+.catalog-field {
     display: inline-grid;
     width: 100%;
     margin: 0px;
@@ -268,7 +263,7 @@ strong {
 }
 
 
-/* catalog buttons*/
+/* catalog-field buttons*/
 
 .ctlg-btns {
     grid-column-start: 2;
@@ -279,10 +274,7 @@ strong {
     width: 100%;
 }
 
-.ctlg-btn-1,
-.ctlg-btn-2,
-.ctlg-btn-3,
-.ctlg-btn-4 {
+.ctlg-btn {
     display: block;
     margin: 20px auto;
     width: auto;
@@ -313,7 +305,7 @@ strong {
 }
 
 
-/* catalog items*/
+/* catalog-field items*/
 
 .ctlg-items {
     grid-column-start: 2;
@@ -352,10 +344,7 @@ strong {
     font-weight: 600;
 }
 
-.ctlg-item-1,
-.ctlg-item-2,
-.ctlg-item-3,
-.ctlg-item-4 {
+.ctlg-item {
     display: block;
     margin: 30px auto;
     line-height: 1.6;
@@ -414,7 +403,7 @@ strong {
 }
 
 
-/* end of catalog*/
+/* end of catalog-field*/
 
 
 /* start of contacts*/
