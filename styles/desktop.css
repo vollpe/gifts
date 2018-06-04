@@ -149,6 +149,9 @@
                     align-content: center;
                     margin: auto 0;
                 }
+                .menu a {
+                    font-size: 12px;
+                }                        
             }
             
             .menu>div {
