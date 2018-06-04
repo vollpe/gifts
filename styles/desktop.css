@@ -49,6 +49,11 @@
                 font-weight: 500;
                 color: #797979;
             }
+            
+            strong {
+                font-size: 16px;
+                color: #00c7c0;
+            }
             /* start of menu+banner*/
             
             .banner {
